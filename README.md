@@ -1,23 +1,28 @@
-# genshell
-## genshell: A bash copy-and-paste oneline reverse shell generator.
+# Genshell: A bash copy-and-paste oneline reverse shell generator.
 
-This project is deticated to ippsec. Thank you for releasing over one-hundred hours of phenomenal cybersecurity content. This script wouldn't exist if it weren't for you. (I Subscribed!!) Another thanks to pentestmonkey for dishing out the awesome shells!
+This project is deticated to ippsec. Thank you for releasing over one-hundred hours of phenomenal cybersecurity content.
+
+Another thanks to pentestmonkey for dishing out the awesome shells!
+
+## Forenote 
+I found myself browsing other websites flagged as "malicious" for rev shells and got fed up with with security reccomendations. This script automates the generation of shells without leaving the browser (WITH COLORS!). There will likely be  rev shells here that you have seen on other sites such as pentestmonkey, hacktricks, and other pentesting sites; if a shell from your site is used, you will be added to the "Inspirations" section in the beginning of the script. All contributions welcome. This is me giving back to the community that has shared so much with me. 
 
 <!--
 *** LOGO !![vmplayer_bx33YLqLcn](https://user-images.githubusercontent.com/68730121/106347752-dc8c6a80-628e-11eb-91e9-3e2d510b2172.png)
 ![Banner](https://user-images.githubusercontent.com/68730121/106348443-58d57c80-6294-11eb-8aa0-b93806259f58.png)
 
 -->
+# Genshell Output 
+
 ![vmplayer_0bpLvQBUgZ](https://user-images.githubusercontent.com/68730121/106348803-0184db80-6297-11eb-9146-6b86acea0595.png)
 
 
 
 
 <!-- GETTING STARTED -->
-## Installation
-Multiple ways to install / use the script: 
+# Installation
 
-1. Use the github repo  
+1. Using the GitHub repo  
    ```sh
    git clone https://github.com/djjoa/genshell.git
    cd genshell
@@ -25,23 +30,25 @@ Multiple ways to install / use the script:
    ./genshell 
    ```
    
-2. Grab the standalone script
+2. As a standalone script
    ```sh
    wget https://raw.githubusercontent.com/djjoa/genshell/main/genshell && chmod +x genshell && ./genshell
    #OR 
    curl https://raw.githubusercontent.com/djjoa/genshell/main/genshell -o genshell && chmod +x genshell && ./genshell
    ```
-3. **Link the file to your path for native use with bash** (not necessary for the script to work) 
-```sh
-# Before
-./genshell -h 
 
-# After 
-sudo ln -s /genshell_install_dir/genshell /usr/local/bin/genshell 
-genshell -h
-```
+3. **Link the file to your path for native use with bash** (not necessary for the script to work) 
+   ```sh
+   # Before
+   ./genshell -h 
+
+   # After 
+   sudo ln -s /genshell_install_dir/genshell /usr/local/bin/genshell 
+   genshell -h
+   ```
 <!-- USAGE EXAMPLES -->
-## Help
+
+# Help
 
 ```sh
 ./genshell -h
@@ -55,16 +62,17 @@ options:
 -l|--LHOST [IP]        Supply TUN0 addr if not auto-parsed by the script (autoparse is set by default)
 -t|--RHOST [IP]        Target IP (optional)
 ```
-## Get Usage
+
+# Usage
 
 ```sh
 ./genshell -u
 Usage: genshell [-h|--help] -p|--port [args] [-l|--LHOST [args]] [-t|--RHOST [args]] [-b|--banner]
 ```
 
-# Running the script 
+# Running the Script 
 
-When run with no arguments, the script displays the banner, help information, and ippsec's shoutout. 
+When run with no arguments, the script displays the banner and help information. 
 
 ![vmplayer_HhJF2BiEUP](https://user-images.githubusercontent.com/68730121/106348709-2298fc80-6296-11eb-85c5-3502ec7fff5b.png)
 
@@ -75,10 +83,12 @@ To generate all reverse shell templates the `-p` or `--port` must be used. The s
 ```sh
 ./genshell -p 4444
 ```
+
 ![vmplayer_0bpLvQBUgZ](https://user-images.githubusercontent.com/68730121/106348803-0184db80-6297-11eb-9146-6b86acea0595.png)
 
 # Additional Arguments 
 If the `-t` or `--RHOST` argument is passed the `xterm` reverse shell dialog will be displayed at the end of the script. 90% of the shell's don't require a RHOST paramter; they have been ommited by default. 
+
 ```sh
 ./genshell -p 4444 -l 1.1.1.1 -t 4.4.4.4
 .... <snip> .... 
@@ -92,7 +102,9 @@ To catch the incoming xterm, start an X-Server on attacker machine (:1 – which
 Xnest :1
 xhost +4.4.4.4
 ```
+
 # Usage Examples
+
 * Generate shell templates on interface address `192.168.4.2` listening on port `4444`
 ```sh
 ./genshell --port 4444 --LHOST 192.168.4.2
