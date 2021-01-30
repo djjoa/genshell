@@ -1,134 +1,59 @@
 # genshell
-genshell: The atomatic copy-and-paste oneline reverse shell generator. Just add args!
-
+genshell: A bash copy-and-paste oneline reverse shell generator.
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** djjoa, genshell, x41x41x41x41, email, project_title, An automatic copy-and-paste oneline reverse shell generator
+*** LOGO !![vmplayer_bx33YLqLcn](https://user-images.githubusercontent.com/68730121/106347752-dc8c6a80-628e-11eb-91e9-3e2d510b2172.png)
 -->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/djjoa/genshell">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">project_title</h3>
-
-  <p align="center">
-    An automatic copy-and-paste oneline reverse shell generator
-    <br />
-    <a href="https://github.com/djjoa/genshell"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/djjoa/genshell">View Demo</a>
-    ·
-    <a href="https://github.com/djjoa/genshell/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/djjoa/genshell/issues">Request Feature</a>
-  </p>
-</p>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Banner](https://user-images.githubusercontent.com/68730121/106348443-58d57c80-6294-11eb-8aa0-b93806259f58.png)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`djjoa`, `genshell`, `x41x41x41x41`, `email`, `project_title`, `An automatic copy-and-paste oneline reverse shell generator`
+
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Installation
+Multiple ways to install / use the script: 
 
-To get a local copy up and running follow these simple steps.
-
-### Installation
-
-1. Clone the repo 
+1. Use the github repo  
    ```sh
    git clone https://github.com/djjoa/genshell.git
+   cd genshell
+   chmod +x gennshell
+   ./genshell 
    ```
-   OR 
    
 2. Grab the standalone script
    ```sh
-   npm install
+   wget https://raw.githubusercontent.com/djjoa/genshell/main/genshell && chmod +x genshell && ./genshell
+   #OR 
+   curl https://raw.githubusercontent.com/djjoa/genshell/main/genshell -o genshell && chmod +x genshell && ./genshell
    ```
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+```sh
+./genshell -u
+Usage: genshell [-h|--help] -p|--port [args] [-l|--LHOST [args]] [-t|--RHOST [args]] [-b|--banner]
+```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+## Help
 
+```sh
+./genshell -h
 
+genshell: The atomatic copy-and-paste oneline reverse shell generator. Just add args!
 
-<!-- ROADMAP -->
-## Roadmap
+options:
+-h|--help              Print this help menu
+-b|--banner            Display the banner
+-p|--port [INT]        Port you wish to cach your shell back on
+-l|--LHOST [IP]        Supply TUN0 addr if not auto-parsed by the script (autoparse is set by default)
+-t|--RHOST [IP]        Target IP (optional)
 
-See the [open issues](https://github.com/djjoa/genshell/issues) for a list of proposed features (and known issues).
-
+```
 
 
 <!-- CONTRIBUTING -->
@@ -142,19 +67,10 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@x41x41x41x41](https://twitter.com/x41x41x41x41) - email
+Zer0 - [@x41x41x41x41](https://twitter.com/x41x41x41x41) - Discord Zer0#0272
 
 Project Link: [https://github.com/djjoa/genshell](https://github.com/djjoa/genshell)
 
@@ -163,10 +79,10 @@ Project Link: [https://github.com/djjoa/genshell](https://github.com/djjoa/gensh
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
 
+* [ippsec](https://twitter.com/ippsec)
+* [ippsec.rocks](https://ippsec.rocks/?#)
+* [pentestmonkey](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 
 
 
