@@ -110,7 +110,7 @@ xhost +4.4.4.4
 ./genshell --port 4444 --LHOST 192.168.4.2
 ./genshell  -p    4444  -l 192.168.4.2
 ```
-* Generate shell templates with defualt `tun0` adapter listening on port 8181
+* Generate shell templates with default `tun0` adapter listening on port 8181
 ```sh
 ./genshell --port 8181
 ./genshell -p 8181
