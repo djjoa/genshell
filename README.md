@@ -5,7 +5,7 @@ This project is deticated to ippsec. Thank you for releasing over one-hundred ho
 Another thanks to pentestmonkey for dishing out the awesome shells!
 
 ## Forenote 
-I found myself browsing other websites flagged as "malicious" for rev shells and got fed up with with security reccomendations. This script automates the generation of shells without leaving the browser (WITH COLORS!). There will likely be  rev shells here that you have seen on other sites such as pentestmonkey, hacktricks, and other pentesting sites; if a shell from your site is used, you will be added to the "Inspirations" section in the beginning of the script. All contributions welcome. This is me giving back to the community that has shared so much with me. 
+I found myself browsing other websites flagged as "malicious" for rev shells and got fed up with with security reccomendations. This script automates the generation of shells without leaving the terminal (WITH COLORS!). There will likely be  rev shells here that you have seen on other sites such as pentestmonkey, hacktricks, and other pentesting sites; if a shell from your site is used, you will be added to the "Inspirations" section in the beginning of the script. All contributions welcome. This is me giving back to the community that has shared so much with me. 
 
 <!--
 *** LOGO !![vmplayer_bx33YLqLcn](https://user-images.githubusercontent.com/68730121/106347752-dc8c6a80-628e-11eb-91e9-3e2d510b2172.png)
